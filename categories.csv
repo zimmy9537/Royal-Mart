@@ -1,0 +1,7 @@
+category,discount_type,discount_value
+Fruit,percentage,10.00
+Dairy,fixed,5.00
+Bakery,fixed,0.00
+Staples,percentage,5.00
+Spices,fixed,15.00
+Snacks,fixed,0.00

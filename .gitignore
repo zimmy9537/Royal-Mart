@@ -1,0 +1,2 @@
+# Ignore all bill log files
+bill_log_*.csv
