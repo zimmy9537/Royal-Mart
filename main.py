@@ -32,7 +32,7 @@ def apply_discount(price, discount_type, discount_value):
     return price
 
 def print_and_log_bill(items, products, discounts, file_writer=None):
-    header = f"{'ID':<10}{'Product':<40}{'Category':<15}{'Quantity':<10}{'Price':<10}{'Discount':<10}{'Total':>10}"
+    header = f"{'ID':<10}{'Product':<40}{'Category':<15}{'Quantity':<10}{'Price':<10}{'Discount':<10}{'Total':>10}{'Savings':>10}"
     separator = '-' * len(header)
 
     print("\n" + separator)
@@ -40,6 +40,7 @@ def print_and_log_bill(items, products, discounts, file_writer=None):
     print(separator)
 
     total = 0
+    total_savings = 0
     for item_id, quantity in items.items():
         if item_id in products:
             product = products[item_id]
@@ -53,10 +54,10 @@ def print_and_log_bill(items, products, discounts, file_writer=None):
             discount_total = (price - discounted_price) * quantity
             final_total = discounted_price * quantity
             total += final_total
+            total_savings += discount_total
 
             # Print to console
-            print(
-                f"{item_id:<10}{product['name']:<40}{category:<15}{quantity:<10}{price:>10.2f}{discount_total:>10.2f}{final_total:>10.2f} INR")
+            print(f"{item_id:<10}{product['name']:<40}{category:<15}{quantity:<10}{price:>10.2f}{discount_total:>10.2f}{final_total:>10.2f} INR{discount_total:>10.2f} INR")
 
             # Write to file
             if file_writer:
@@ -65,16 +66,19 @@ def print_and_log_bill(items, products, discounts, file_writer=None):
                     f"{price:.2f}", f"{discount_total:.2f}", f"{final_total:.2f} INR"
                 ])
         else:
-            print(f"{item_id:<10}{'Unknown':<40}{'N/A':<15}{quantity:<10}{'N/A':>10}{'N/A':>10}{'N/A':>10}")
+            print(f"{item_id:<10}{'Unknown':<40}{'N/A':<15}{quantity:<10}{'N/A':>10}{'N/A':>10}{'N/A':>10}{'N/A':>10}")
 
     print(separator)
     print(f"{'Total Amount':<70}{total:>10.2f} INR")
+    print(f"{'Total Savings':<70}{total_savings:>10.2f} INR")
     print(separator)
 
     # Write total to file
     if file_writer:
         file_writer.writerow([])
         file_writer.writerow([''] * 6 + ['Total Amount', f"{total:.2f} INR"])
+        file_writer.writerow([''] * 6 + ['Total Savings', f"{total_savings:.2f} INR"])
+        file_writer.writerow([''] * 7)  # Blank line after each bill
 
 def main():
     products_file = 'products.csv'
@@ -91,9 +95,10 @@ def main():
     with open(log_filename, mode='a', newline='') as log_file:
         file_writer = csv.writer(log_file)
 
-        # Write header for new day or continue with existing file
-        file_writer.writerow(['ID', 'Product', 'Category', 'Quantity', 'Price', 'Discount', 'Total'])
-        file_writer.writerow([''] * 7)
+        # Only write the header if the file is new
+        log_file.seek(0, 2)
+        if log_file.tell() == 0:
+            file_writer.writerow(['ID', 'Product', 'Category', 'Quantity', 'Price', 'Discount', 'Total'])
 
         while True:
             items = {}
@@ -115,7 +120,7 @@ def main():
             else:
                 print("No items added. Please enter product IDs and quantities.")
 
-            # End input after processing
+            # End input after processing one bill
             break
 
 if __name__ == "__main__":
