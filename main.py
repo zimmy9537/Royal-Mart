@@ -107,11 +107,15 @@ def main():
                 if item_id == "":
                     break
                 if item_id in products:
-                    quantity = int(input(f"Enter quantity for {products[item_id]['name']}: "))
-                    if item_id in items:
-                        items[item_id] += quantity
-                    else:
-                        items[item_id] = quantity
+                    quantity_str = input(f"Enter quantity for {products[item_id]['name']}: ").strip()
+                    try:
+                        quantity = int(quantity_str)
+                        if item_id in items:
+                            items[item_id] += quantity
+                        else:
+                            items[item_id] = quantity
+                    except ValueError:
+                        print("Invalid quantity. Please enter a valid number.")
                 else:
                     print("Product ID not found. Please try again.")
 
