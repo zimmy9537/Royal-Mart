@@ -9,7 +9,8 @@ def load_products(filename):
             products[row['id']] = {
                 'name': row['product_name'],
                 'price': float(row['price']),
-                'category': row['category']
+                'category': row['category'],
+                'stock': int(row['stock'])  # Load stock from CSV
             }
     return products
 
@@ -46,6 +47,7 @@ def print_and_log_bill(items, products, discounts, file_writer=None):
             product = products[item_id]
             price = product['price']
             category = product['category']
+            stock = product['stock']
             discount_info = discounts.get(category, {'type': 'fixed', 'value': 0})
             discount_type = discount_info['type']
             discount_value = discount_info['value']
@@ -80,6 +82,28 @@ def print_and_log_bill(items, products, discounts, file_writer=None):
         file_writer.writerow([''] * 6 + ['Total Savings', f"{total_savings:.2f} INR"])
         file_writer.writerow([''] * 7)  # Blank line after each bill
 
+def update_stock_and_warn(items, products):
+    for item_id, quantity in items.items():
+        if item_id in products:
+            product = products[item_id]
+            # Update stock after the bill is printed
+            products[item_id]['stock'] -= quantity
+            new_stock = products[item_id]['stock']
+
+            # Warning if stock is low
+            if new_stock < 10:
+                print(f"Warning: Stock for {product['name']} is low (only {new_stock} left).")
+
+def update_stock_file(filename, products):
+    with open(filename, mode='w', newline='') as file:
+        writer = csv.writer(file)
+        writer.writerow(['id', 'product_name', 'price', 'category', 'origin_price', 'stock'])  # Header
+        for item_id, details in products.items():
+            writer.writerow([
+                item_id, details['name'], details['price'], details['category'],
+                details['price'], details['stock']
+            ])
+
 def main():
     products_file = 'products.csv'
     discounts_file = 'categories.csv'
@@ -107,9 +131,18 @@ def main():
                 if item_id == "":
                     break
                 if item_id in products:
-                    quantity_str = input(f"Enter quantity for {products[item_id]['name']}: ").strip()
+                    max_stock = products[item_id]['stock']
+                    if max_stock <= 0:
+                        print(f"Sorry, {products[item_id]['name']} is out of stock.")
+                        continue
+
+                    quantity_str = input(f"Enter quantity for {products[item_id]['name']} (Available: {max_stock}): ").strip()
                     try:
                         quantity = int(quantity_str)
+                        if quantity > max_stock:
+                            print(f"Insufficient stock! Only {max_stock} available.")
+                            continue
+
                         if item_id in items:
                             items[item_id] += quantity
                         else:
@@ -120,12 +153,18 @@ def main():
                     print("Product ID not found. Please try again.")
 
             if items:
+                # Print the bill first
                 print_and_log_bill(items, products, discounts, file_writer)
+                # Update stock and show warnings after bill is shown
+                update_stock_and_warn(items, products)
             else:
                 print("No items added. Please enter product IDs and quantities.")
 
             # End input after processing one bill
             break
+
+    # Update stock in the products.csv file
+    update_stock_file(products_file, products)
 
 if __name__ == "__main__":
     main()
