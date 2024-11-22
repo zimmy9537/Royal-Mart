@@ -1,201 +1,201 @@
-id,product_name,price,category,origin_price,stock
-001,AppleFresh (Brand: AppleFresh),60.0,Fruit,60.0,0
-002,BananaBunch (Brand: BananaBunch),30.0,Fruit,30.0,75
-003,OrangeFarm (Brand: OrangeFarm),50.0,Fruit,50.0,0
-004,Amul Milk (Brand: Amul),50.0,Dairy,50.0,80
-005,Balaji Bread (Brand: Balaji Wafers),40.0,Bakery,40.0,27
-006,India Rice (Brand: India Rice),70.0,Staples,70.0,150
-007,Tata Tea Powder (Brand: Tata Tea),150.0,Staples,150.0,120
-008,Amul Butter (Brand: Amul),80.0,Dairy,80.0,60
-009,Mother Dairy Spices (Brand: Mother Dairy),120.0,Spices,120.0,90
-010,Balaji Chips (Brand: Balaji Wafers),20.0,Snacks,20.0,200
-011,Red Apple (Brand: FreshFruits),65.0,Fruit,65.0,50
-012,Plantain (Brand: GreenGold),35.0,Fruit,35.0,70
-013,Juicy Oranges (Brand: CitrusCo),55.0,Fruit,55.0,40
-014,Full Cream Milk (Brand: Amul),55.0,Dairy,55.0,100
-015,Wheat Bread (Brand: WonderBread),45.0,Bakery,45.0,25
-016,Basmati Rice (Brand: RoyalRice),80.0,Staples,80.0,120
-017,Green Tea Powder (Brand: Lipton),160.0,Staples,160.0,80
-018,Butter Spread (Brand: Amul),85.0,Dairy,85.0,60
-019,Organic Spices (Brand: SpiceWorld),130.0,Spices,130.0,90
-020,Potato Chips (Brand: Lay's),25.0,Snacks,25.0,200
-021,Strawberries (Brand: BerryFarm),75.0,Fruit,75.0,35
-022,Golden Bananas (Brand: FruitJoy),35.0,Fruit,35.0,75
-023,Fresh Lemons (Brand: CitrusFresh),40.0,Fruit,40.0,60
-024,Low Fat Milk (Brand: Amul),55.0,Dairy,55.0,100
-025,Multigrain Bread (Brand: HealthyBake),45.0,Bakery,45.0,25
-026,Long Grain Rice (Brand: PureRice),85.0,Staples,85.0,130
-027,Black Tea (Brand: Tetley),160.0,Staples,160.0,80
-028,Cheddar Cheese (Brand: Amul),90.0,Dairy,90.0,70
-029,Garlic Powder (Brand: SpiceKing),110.0,Spices,110.0,90
-030,Tomato Chips (Brand: Lay's),28.0,Snacks,28.0,180
-031,Blueberries (Brand: BerryFresh),85.0,Fruit,85.0,20
-032,Plantains (Brand: TropiFruit),38.0,Fruit,38.0,50
-033,Navel Oranges (Brand: CitrusGold),58.0,Fruit,58.0,25
-034,Skimmed Milk (Brand: Amul),52.0,Dairy,52.0,40
-035,Whole Wheat Bread (Brand: GrainBake),48.0,Bakery,48.0,30
-036,White Rice (Brand: RoyalHarvest),78.0,Staples,78.0,60
-037,Green Tea Bags (Brand: Lipton),170.0,Staples,170.0,50
-038,Butter Cheese (Brand: Amul),85.0,Dairy,85.0,35
-039,Turmeric Powder (Brand: SpiceWorld),125.0,Spices,125.0,45
-040,Nacho Chips (Brand: Doritos),22.0,Snacks,22.0,150
-041,Raspberries (Brand: BerryFarm),80.0,Fruit,80.0,30
-042,Red Bananas (Brand: TropicalFruit),32.0,Fruit,32.0,60
-043,Key Limes (Brand: LimeDelight),45.0,Fruit,45.0,50
-044,Full Cream Yogurt (Brand: Amul),60.0,Dairy,60.0,40
-045,Seeded Bread (Brand: FreshBake),50.0,Bakery,50.0,30
-046,Instant Rice (Brand: QuickCook),90.0,Staples,90.0,70
-047,Black Tea Leaves (Brand: Tetley),165.0,Staples,165.0,50
-048,Gouda Cheese (Brand: GourmetCheese),95.0,Dairy,95.0,25
-049,Chili Powder (Brand: SpiceWorld),130.0,Spices,130.0,60
-050,Sour Cream Chips (Brand: Lay's),30.0,Snacks,30.0,100
-051,Cherry Tomatoes (Brand: FreshVeg),55.0,Fruit,55.0,40
-052,Organic Plantains (Brand: GreenHarvest),40.0,Fruit,40.0,35
-053,Mangoes (Brand: TropicalDelight),65.0,Fruit,65.0,25
-054,Cheese Slices (Brand: Amul),70.0,Dairy,70.0,30
-055,Whole Grain Bread (Brand: GrainMaster),55.0,Bakery,55.0,45
-056,Basmati Rice (Brand: PremiumRice),95.0,Staples,95.0,80
-057,Herbal Tea (Brand: TeaMasters),175.0,Staples,175.0,55
-058,Butter Milk (Brand: Amul),65.0,Dairy,65.0,40
-059,Black Pepper (Brand: SpiceKing),125.0,Spices,125.0,50
-060,Spicy Nachos (Brand: Doritos),24.0,Snacks,24.0,60
-061,Apples (Brand: FarmFresh),70.0,Fruit,70.0,45
-062,Green Bananas (Brand: Nature'sBest),38.0,Fruit,38.0,50
-063,Valencia Oranges (Brand: CitrusGold),62.0,Fruit,62.0,40
-064,Greek Yogurt (Brand: Amul),75.0,Dairy,75.0,30
-065,Rye Bread (Brand: Baker'sChoice),60.0,Bakery,60.0,35
-066,Parboiled Rice (Brand: QuickCook),85.0,Staples,85.0,70
-067,Chai Tea (Brand: Tetley),165.0,Staples,165.0,45
-068,Cheddar Spread (Brand: GourmetCheese),90.0,Dairy,90.0,25
-069,Coriander Powder (Brand: SpiceWorld),140.0,Spices,140.0,60
-070,Potato Wedges (Brand: Lay's),27.0,Snacks,27.0,75
-071,Pears (Brand: OrchardFresh),68.0,Fruit,68.0,50
-072,Red Bananas (Brand: FruitDelight),33.0,Fruit,33.0,40
-073,Key Limes (Brand: CitrusFresh),48.0,Fruit,48.0,35
-074,Low-Fat Cream Cheese (Brand: Amul),80.0,Dairy,80.0,30
-075,Multigrain Rolls (Brand: HealthyBake),50.0,Bakery,50.0,40
-076,Long-Grain Rice (Brand: PureHarvest),88.0,Staples,88.0,65
-077,Assam Tea (Brand: TeaMasters),180.0,Staples,180.0,50
-078,American Cheese (Brand: GourmetCheese),85.0,Dairy,85.0,30
-079,Garam Masala (Brand: SpiceWorld),135.0,Spices,135.0,55
-080,Cheese Puffs (Brand: Lay's),23.0,Snacks,23.0,85
-081,Plums (Brand: FreshHarvest),72.0,Fruit,72.0,45
-082,Yellow Plantains (Brand: TropicalHarvest),42.0,Fruit,42.0,50
-083,Green Apples (Brand: OrchardFresh),67.0,Fruit,67.0,55
-084,Butter Milk (Brand: DairyFresh),68.0,Dairy,68.0,40
-085,Seeded Multigrain Bread (Brand: GrainMaster),58.0,Bakery,58.0,30
-086,Quick-Cook Rice (Brand: InstantCook),92.0,Staples,92.0,70
-087,Herbal Green Tea (Brand: TeaMasters),175.0,Staples,175.0,55
-088,Cheddar Cheese (Brand: GourmetCheese),95.0,Dairy,95.0,30
-089,Red Chili Powder (Brand: SpiceWorld),140.0,Spices,140.0,50
-090,Barbecue Chips (Brand: Lay's),26.0,Snacks,26.0,75
-091,Avocados (Brand: FreshVeg),80.0,Fruit,80.0,50
-092,Ripe Bananas (Brand: FruitJoy),35.0,Fruit,35.0,60
-093,Clementines (Brand: CitrusGold),50.0,Fruit,50.0,55
-094,Low-Fat Greek Yogurt (Brand: Amul),78.0,Dairy,78.0,35
-095,Cheddar Biscuits (Brand: HealthyBake),52.0,Bakery,52.0,40
-096,White Basmati Rice (Brand: RoyalHarvest),90.0,Staples,90.0,70
-097,Green Tea (Brand: Tetley),175.0,Staples,175.0,55
-098,Edam Cheese (Brand: GourmetCheese),85.0,Dairy,85.0,30
-099,Chili Flakes (Brand: SpiceWorld),125.0,Spices,125.0,45
-100,Cheddar Puffs (Brand: Doritos),22.0,Snacks,22.0,60
-101,Red Apples (Brand: OrchardDelight),72.0,Fruit,72.0,40
-102,Yellow Bananas (Brand: TropicFruit),37.0,Fruit,37.0,45
-103,Juicy Mangoes (Brand: MangoMania),70.0,Fruit,70.0,30
-104,Skimmed Milk (Brand: Amul),60.0,Dairy,60.0,50
-105,Oatmeal Bread (Brand: HealthyGrains),55.0,Bakery,55.0,40
-106,Premium Rice (Brand: PureHarvest),100.0,Staples,100.0,75
-107,Green Tea (Brand: GreenLeaf),185.0,Staples,185.0,60
-108,Milk Butter (Brand: Amul),75.0,Dairy,75.0,40
-109,Chili Powder (Brand: SpiceMaster),130.0,Spices,130.0,55
-110,Spicy Chips (Brand: Lay's),29.0,Snacks,29.0,70
-111,Organic Blueberries (Brand: BerryFresh),90.0,Fruit,90.0,35
-112,Plantains (Brand: TropicalFruit),40.0,Fruit,40.0,40
-113,Clementines (Brand: CitrusGold),55.0,Fruit,55.0,45
-114,Full Cream Cheese (Brand: Amul),80.0,Dairy,80.0,35
-115,Multigrain Bread (Brand: Baker'sChoice),55.0,Bakery,55.0,50
-116,Quick Rice (Brand: InstantCook),88.0,Staples,88.0,60
-117,Black Tea (Brand: AssamLeaf),170.0,Staples,170.0,55
-118,Cheddar Slices (Brand: GourmetCheese),85.0,Dairy,85.0,30
-119,Turmeric (Brand: SpiceWorld),140.0,Spices,140.0,50
-120,Cheese Balls (Brand: Lay's),25.0,Snacks,25.0,65
-121,Fresh Pears (Brand: OrchardFresh),70.0,Fruit,70.0,45
-122,Ripe Plantains (Brand: TropicalDelight),42.0,Fruit,42.0,40
-123,Valencia Oranges (Brand: CitrusFresh),63.0,Fruit,63.0,35
-124,Greek Yogurt (Brand: Amul),78.0,Dairy,78.0,30
-125,Rye Rolls (Brand: Baker'sChoice),60.0,Bakery,60.0,45
-126,White Rice (Brand: PureHarvest),90.0,Staples,90.0,70
-127,Herbal Tea Bags (Brand: TeaMasters),180.0,Staples,180.0,60
-128,Colby Cheese (Brand: GourmetCheese),90.0,Dairy,90.0,35
-129,Clove Powder (Brand: SpiceMaster),120.0,Spices,120.0,50
-130,BBQ Chips (Brand: Doritos),22.0,Snacks,22.0,60
-131,Red Grapes (Brand: BerryFarm),78.0,Fruit,78.0,50
-132,Green Apples (Brand: FreshOrchard),68.0,Fruit,68.0,45
-133,Key Limes (Brand: CitrusFresh),47.0,Fruit,47.0,35
-134,Skimmed Milk (Brand: Amul),62.0,Dairy,62.0,50
-135,Seeded Multigrain Loaf (Brand: HealthyGrains),52.0,Bakery,52.0,40
-136,Long Grain Rice (Brand: RoyalRice),93.0,Staples,93.0,60
-137,Green Tea Leaves (Brand: TeaMasters),175.0,Staples,175.0,55
-138,Butter Cheese (Brand: GourmetCheese),88.0,Dairy,88.0,35
-139,Coriander Seeds (Brand: SpiceWorld),135.0,Spices,135.0,45
-140,Cheese Sticks (Brand: Lay's),28.0,Snacks,28.0,70
-141,Fresh Strawberries (Brand: BerryFresh),80.0,Fruit,80.0,45
-142,Organic Bananas (Brand: FreshFruit),34.0,Fruit,34.0,55
-143,Fresh Mangoes (Brand: TropicalFruit),66.0,Fruit,66.0,50
-144,Cheddar Cheese Spread (Brand: Amul),85.0,Dairy,85.0,40
-145,Whole Wheat Rolls (Brand: Baker'sChoice),55.0,Bakery,55.0,50
-146,Instant Basmati Rice (Brand: RoyalHarvest),92.0,Staples,92.0,65
-147,Black Tea Bags (Brand: AssamLeaf),175.0,Staples,175.0,55
-148,Swiss Cheese (Brand: GourmetCheese),95.0,Dairy,95.0,30
-149,Garlic Powder (Brand: SpiceMaster),125.0,Spices,125.0,50
-150,Potato Chips (Brand: Lay's),26.0,Snacks,26.0,70
-151,Red Grapes (Brand: VineFresh),80.0,Fruit,80.0,45
-152,Plantains (Brand: Nature'sBest),39.0,Fruit,39.0,40
-153,Oranges (Brand: CitrusDelight),70.0,Fruit,70.0,50
-154,Full Cream Milk (Brand: Amul),65.0,Dairy,65.0,60
-155,Whole Grain Rolls (Brand: GrainMaster),60.0,Bakery,60.0,45
-156,Long Grain Basmati (Brand: PureHarvest),95.0,Staples,95.0,75
-157,Herbal Green Tea (Brand: GreenLeaf),190.0,Staples,190.0,55
-158,Cheddar Cheese (Brand: Amul),85.0,Dairy,85.0,40
-159,Garlic Masala (Brand: SpiceMaster),130.0,Spices,130.0,50
-160,Nachos Cheese (Brand: Doritos),27.0,Snacks,27.0,70
-161,Juicy Peaches (Brand: FruitFarm),75.0,Fruit,75.0,35
-162,Yellow Bananas (Brand: FruitJoy),34.0,Fruit,34.0,50
-163,Fresh Mangoes (Brand: TropicalDelight),68.0,Fruit,68.0,40
-164,Greek Yogurt (Brand: DairyDelight),80.0,Dairy,80.0,30
-165,Cheese Croissant (Brand: FreshBake),55.0,Bakery,55.0,50
-166,Instant White Rice (Brand: QuickCook),88.0,Staples,88.0,60
-167,Green Tea (Brand: TeaMasters),185.0,Staples,185.0,55
-168,Colby Jack Cheese (Brand: GourmetCheese),90.0,Dairy,90.0,35
-169,Spicy Curry Powder (Brand: SpiceWorld),145.0,Spices,145.0,50
-170,Barbecue Doritos (Brand: Doritos),23.0,Snacks,23.0,65
-171,Fresh Apricots (Brand: OrchardDelight),70.0,Fruit,70.0,40
-172,Organic Bananas (Brand: NatureFresh),36.0,Fruit,36.0,45
-173,Valencia Oranges (Brand: CitrusGold),62.0,Fruit,62.0,50
-174,Low-Fat Yogurt (Brand: Amul),75.0,Dairy,75.0,35
-175,Whole Wheat Bread (Brand: HealthyBake),50.0,Bakery,50.0,50
-176,Parboiled Basmati Rice (Brand: RoyalHarvest),90.0,Staples,90.0,70
-177,Assam Tea (Brand: TeaMasters),180.0,Staples,180.0,60
-178,Swiss Cheese Slices (Brand: GourmetCheese),95.0,Dairy,95.0,35
-179,Red Chili Powder (Brand: SpiceMaster),140.0,Spices,140.0,55
-180,Spicy Cheese Puffs (Brand: Lay's),28.0,Snacks,28.0,65
-181,Blackberries (Brand: BerryFresh),85.0,Fruit,85.0,40
-182,Green Plantains (Brand: FreshHarvest),40.0,Fruit,40.0,45
-183,Mandarin Oranges (Brand: CitrusFresh),55.0,Fruit,55.0,50
-184,Cheddar Cheese Spread (Brand: Amul),80.0,Dairy,80.0,40
-185,Seeded Bread (Brand: GrainMaster),55.0,Bakery,55.0,45
-186,Quick-Cook Rice (Brand: PureRice),95.0,Staples,95.0,65
-187,Herbal Tea (Brand: TeaMasters),190.0,Staples,190.0,55
-188,Edam Cheese (Brand: GourmetCheese),90.0,Dairy,90.0,35
-189,Tandoori Masala (Brand: SpiceWorld),150.0,Spices,150.0,45
-190,Cheese Balls (Brand: Lay's),26.0,Snacks,26.0,70
-191,Fresh Kiwi (Brand: FruitFarm),70.0,Fruit,70.0,35
-192,Yellow Plantains (Brand: TropicalDelight),41.0,Fruit,41.0,40
-193,Organic Navel Oranges (Brand: CitrusDelight),68.0,Fruit,68.0,45
-194,Full Cream Cheese (Brand: Amul),85.0,Dairy,85.0,40
-195,Multigrain Loaf (Brand: HealthyGrains),55.0,Bakery,55.0,50
-196,Long Grain Rice (Brand: QuickCook),90.0,Staples,90.0,60
-197,Green Tea (Brand: GreenLeaf),190.0,Staples,190.0,55
-198,Cheddar Cheese (Brand: GourmetCheese),95.0,Dairy,95.0,35
-199,Chili Powder (Brand: SpiceMaster),130.0,Spices,130.0,50
-200,Potato Chips (Brand: Lay's),27.0,Snacks,27.0,70
+id,product_name,price,category,stock
+001,AppleFresh (Brand: AppleFresh),60.0,Fruit,989
+002,BananaBunch (Brand: BananaBunch),30.0,Fruit,690
+003,OrangeFarm (Brand: OrangeFarm),50.0,Fruit,2393
+004,Amul Milk (Brand: Amul),50.0,Dairy,329
+005,Balaji Bread (Brand: Balaji Wafers),40.0,Bakery,2048
+006,India Rice (Brand: India Rice),70.0,Staples,150
+007,Tata Tea Powder (Brand: Tata Tea),150.0,Staples,120
+008,Amul Butter (Brand: Amul),80.0,Dairy,60
+009,Mother Dairy Spices (Brand: Mother Dairy),120.0,Spices,90
+010,Balaji Chips (Brand: Balaji Wafers),20.0,Snacks,200
+011,Red Apple (Brand: FreshFruits),65.0,Fruit,502
+012,Plantain (Brand: GreenGold),35.0,Fruit,702
+013,Juicy Oranges (Brand: CitrusCo),55.0,Fruit,40
+014,Full Cream Milk (Brand: Amul),55.0,Dairy,100
+015,Wheat Bread (Brand: WonderBread),45.0,Bakery,25
+016,Basmati Rice (Brand: RoyalRice),80.0,Staples,120
+017,Green Tea Powder (Brand: Lipton),160.0,Staples,80
+018,Butter Spread (Brand: Amul),85.0,Dairy,60
+019,Organic Spices (Brand: SpiceWorld),130.0,Spices,90
+020,Potato Chips (Brand: Lay's),25.0,Snacks,200
+021,Strawberries (Brand: BerryFarm),75.0,Fruit,34
+022,Golden Bananas (Brand: FruitJoy),35.0,Fruit,63
+023,Fresh Lemons (Brand: CitrusFresh),40.0,Fruit,57
+024,Low Fat Milk (Brand: Amul),55.0,Dairy,100
+025,Multigrain Bread (Brand: HealthyBake),45.0,Bakery,25
+026,Long Grain Rice (Brand: PureRice),85.0,Staples,130
+027,Black Tea (Brand: Tetley),160.0,Staples,80
+028,Cheddar Cheese (Brand: Amul),90.0,Dairy,70
+029,Garlic Powder (Brand: SpiceKing),110.0,Spices,90
+030,Tomato Chips (Brand: Lay's),28.0,Snacks,180
+031,Blueberries (Brand: BerryFresh),85.0,Fruit,20
+032,Plantains (Brand: TropiFruit),38.0,Fruit,50
+033,Navel Oranges (Brand: CitrusGold),58.0,Fruit,22
+034,Skimmed Milk (Brand: Amul),52.0,Dairy,40
+035,Whole Wheat Bread (Brand: GrainBake),48.0,Bakery,30
+036,White Rice (Brand: RoyalHarvest),78.0,Staples,60
+037,Green Tea Bags (Brand: Lipton),170.0,Staples,50
+038,Butter Cheese (Brand: Amul),85.0,Dairy,35
+039,Turmeric Powder (Brand: SpiceWorld),125.0,Spices,45
+040,Nacho Chips (Brand: Doritos),22.0,Snacks,150
+041,Raspberries (Brand: BerryFarm),80.0,Fruit,30
+042,Red Bananas (Brand: TropicalFruit),32.0,Fruit,60
+043,Key Limes (Brand: LimeDelight),45.0,Fruit,50
+044,Full Cream Yogurt (Brand: Amul),60.0,Dairy,40
+045,Seeded Bread (Brand: FreshBake),50.0,Bakery,28
+046,Instant Rice (Brand: QuickCook),90.0,Staples,70
+047,Black Tea Leaves (Brand: Tetley),165.0,Staples,50
+048,Gouda Cheese (Brand: GourmetCheese),95.0,Dairy,25
+049,Chili Powder (Brand: SpiceWorld),130.0,Spices,60
+050,Sour Cream Chips (Brand: Lay's),30.0,Snacks,100
+051,Cherry Tomatoes (Brand: FreshVeg),55.0,Fruit,40
+052,Organic Plantains (Brand: GreenHarvest),40.0,Fruit,35
+053,Mangoes (Brand: TropicalDelight),65.0,Fruit,252
+054,Cheese Slices (Brand: Amul),70.0,Dairy,25
+055,Whole Grain Bread (Brand: GrainMaster),55.0,Bakery,45
+056,Basmati Rice (Brand: PremiumRice),95.0,Staples,80
+057,Herbal Tea (Brand: TeaMasters),175.0,Staples,55
+058,Butter Milk (Brand: Amul),65.0,Dairy,40
+059,Black Pepper (Brand: SpiceKing),125.0,Spices,50
+060,Spicy Nachos (Brand: Doritos),24.0,Snacks,60
+061,Apples (Brand: FarmFresh),70.0,Fruit,45
+062,Green Bananas (Brand: Nature'sBest),38.0,Fruit,50
+063,Valencia Oranges (Brand: CitrusGold),62.0,Fruit,40
+064,Greek Yogurt (Brand: Amul),75.0,Dairy,30
+065,Rye Bread (Brand: Baker'sChoice),60.0,Bakery,35
+066,Parboiled Rice (Brand: QuickCook),85.0,Staples,70
+067,Chai Tea (Brand: Tetley),165.0,Staples,42
+068,Cheddar Spread (Brand: GourmetCheese),90.0,Dairy,25
+069,Coriander Powder (Brand: SpiceWorld),140.0,Spices,60
+070,Potato Wedges (Brand: Lay's),27.0,Snacks,75
+071,Pears (Brand: OrchardFresh),68.0,Fruit,50
+072,Red Bananas (Brand: FruitDelight),33.0,Fruit,40
+073,Key Limes (Brand: CitrusFresh),48.0,Fruit,35
+074,Low-Fat Cream Cheese (Brand: Amul),80.0,Dairy,30
+075,Multigrain Rolls (Brand: HealthyBake),50.0,Bakery,40
+076,Long-Grain Rice (Brand: PureHarvest),88.0,Staples,65
+077,Assam Tea (Brand: TeaMasters),180.0,Staples,50
+078,American Cheese (Brand: GourmetCheese),85.0,Dairy,30
+079,Garam Masala (Brand: SpiceWorld),135.0,Spices,55
+080,Cheese Puffs (Brand: Lay's),23.0,Snacks,85
+081,Plums (Brand: FreshHarvest),72.0,Fruit,45
+082,Yellow Plantains (Brand: TropicalHarvest),42.0,Fruit,50
+083,Green Apples (Brand: OrchardFresh),67.0,Fruit,55
+084,Butter Milk (Brand: DairyFresh),68.0,Dairy,40
+085,Seeded Multigrain Bread (Brand: GrainMaster),58.0,Bakery,30
+086,Quick-Cook Rice (Brand: InstantCook),92.0,Staples,70
+087,Herbal Green Tea (Brand: TeaMasters),175.0,Staples,55
+088,Cheddar Cheese (Brand: GourmetCheese),95.0,Dairy,30
+089,Red Chili Powder (Brand: SpiceWorld),140.0,Spices,50
+090,Barbecue Chips (Brand: Lay's),26.0,Snacks,75
+091,Avocados (Brand: FreshVeg),80.0,Fruit,50
+092,Ripe Bananas (Brand: FruitJoy),35.0,Fruit,60
+093,Clementines (Brand: CitrusGold),50.0,Fruit,55
+094,Low-Fat Greek Yogurt (Brand: Amul),78.0,Dairy,35
+095,Cheddar Biscuits (Brand: HealthyBake),52.0,Bakery,40
+096,White Basmati Rice (Brand: RoyalHarvest),90.0,Staples,70
+097,Green Tea (Brand: Tetley),175.0,Staples,55
+098,Edam Cheese (Brand: GourmetCheese),85.0,Dairy,30
+099,Chili Flakes (Brand: SpiceWorld),125.0,Spices,45
+100,Cheddar Puffs (Brand: Doritos),22.0,Snacks,60
+101,Red Apples (Brand: OrchardDelight),72.0,Fruit,40
+102,Yellow Bananas (Brand: TropicFruit),37.0,Fruit,45
+103,Juicy Mangoes (Brand: MangoMania),70.0,Fruit,30
+104,Skimmed Milk (Brand: Amul),60.0,Dairy,50
+105,Oatmeal Bread (Brand: HealthyGrains),55.0,Bakery,40
+106,Premium Rice (Brand: PureHarvest),100.0,Staples,75
+107,Green Tea (Brand: GreenLeaf),185.0,Staples,60
+108,Milk Butter (Brand: Amul),75.0,Dairy,40
+109,Chili Powder (Brand: SpiceMaster),130.0,Spices,55
+110,Spicy Chips (Brand: Lay's),29.0,Snacks,70
+111,Organic Blueberries (Brand: BerryFresh),90.0,Fruit,35
+112,Plantains (Brand: TropicalFruit),40.0,Fruit,40
+113,Clementines (Brand: CitrusGold),55.0,Fruit,45
+114,Full Cream Cheese (Brand: Amul),80.0,Dairy,35
+115,Multigrain Bread (Brand: Baker'sChoice),55.0,Bakery,50
+116,Quick Rice (Brand: InstantCook),88.0,Staples,60
+117,Black Tea (Brand: AssamLeaf),170.0,Staples,55
+118,Cheddar Slices (Brand: GourmetCheese),85.0,Dairy,30
+119,Turmeric (Brand: SpiceWorld),140.0,Spices,50
+120,Cheese Balls (Brand: Lay's),25.0,Snacks,65
+121,Fresh Pears (Brand: OrchardFresh),70.0,Fruit,45
+122,Ripe Plantains (Brand: TropicalDelight),42.0,Fruit,40
+123,Valencia Oranges (Brand: CitrusFresh),63.0,Fruit,35
+124,Greek Yogurt (Brand: Amul),78.0,Dairy,30
+125,Rye Rolls (Brand: Baker'sChoice),60.0,Bakery,45
+126,White Rice (Brand: PureHarvest),90.0,Staples,70
+127,Herbal Tea Bags (Brand: TeaMasters),180.0,Staples,60
+128,Colby Cheese (Brand: GourmetCheese),90.0,Dairy,35
+129,Clove Powder (Brand: SpiceMaster),120.0,Spices,50
+130,BBQ Chips (Brand: Doritos),22.0,Snacks,60
+131,Red Grapes (Brand: BerryFarm),78.0,Fruit,50
+132,Green Apples (Brand: FreshOrchard),68.0,Fruit,45
+133,Key Limes (Brand: CitrusFresh),47.0,Fruit,35
+134,Skimmed Milk (Brand: Amul),62.0,Dairy,50
+135,Seeded Multigrain Loaf (Brand: HealthyGrains),52.0,Bakery,40
+136,Long Grain Rice (Brand: RoyalRice),93.0,Staples,60
+137,Green Tea Leaves (Brand: TeaMasters),175.0,Staples,55
+138,Butter Cheese (Brand: GourmetCheese),88.0,Dairy,35
+139,Coriander Seeds (Brand: SpiceWorld),135.0,Spices,45
+140,Cheese Sticks (Brand: Lay's),28.0,Snacks,70
+141,Fresh Strawberries (Brand: BerryFresh),80.0,Fruit,45
+142,Organic Bananas (Brand: FreshFruit),34.0,Fruit,55
+143,Fresh Mangoes (Brand: TropicalFruit),66.0,Fruit,50
+144,Cheddar Cheese Spread (Brand: Amul),85.0,Dairy,40
+145,Whole Wheat Rolls (Brand: Baker'sChoice),55.0,Bakery,50
+146,Instant Basmati Rice (Brand: RoyalHarvest),92.0,Staples,65
+147,Black Tea Bags (Brand: AssamLeaf),175.0,Staples,55
+148,Swiss Cheese (Brand: GourmetCheese),95.0,Dairy,30
+149,Garlic Powder (Brand: SpiceMaster),125.0,Spices,50
+150,Potato Chips (Brand: Lay's),26.0,Snacks,70
+151,Red Grapes (Brand: VineFresh),80.0,Fruit,45
+152,Plantains (Brand: Nature'sBest),39.0,Fruit,40
+153,Oranges (Brand: CitrusDelight),70.0,Fruit,50
+154,Full Cream Milk (Brand: Amul),65.0,Dairy,60
+155,Whole Grain Rolls (Brand: GrainMaster),60.0,Bakery,45
+156,Long Grain Basmati (Brand: PureHarvest),95.0,Staples,75
+157,Herbal Green Tea (Brand: GreenLeaf),190.0,Staples,55
+158,Cheddar Cheese (Brand: Amul),85.0,Dairy,40
+159,Garlic Masala (Brand: SpiceMaster),130.0,Spices,50
+160,Nachos Cheese (Brand: Doritos),27.0,Snacks,70
+161,Juicy Peaches (Brand: FruitFarm),75.0,Fruit,35
+162,Yellow Bananas (Brand: FruitJoy),34.0,Fruit,50
+163,Fresh Mangoes (Brand: TropicalDelight),68.0,Fruit,40
+164,Greek Yogurt (Brand: DairyDelight),80.0,Dairy,30
+165,Cheese Croissant (Brand: FreshBake),55.0,Bakery,50
+166,Instant White Rice (Brand: QuickCook),88.0,Staples,60
+167,Green Tea (Brand: TeaMasters),185.0,Staples,55
+168,Colby Jack Cheese (Brand: GourmetCheese),90.0,Dairy,35
+169,Spicy Curry Powder (Brand: SpiceWorld),145.0,Spices,50
+170,Barbecue Doritos (Brand: Doritos),23.0,Snacks,65
+171,Fresh Apricots (Brand: OrchardDelight),70.0,Fruit,40
+172,Organic Bananas (Brand: NatureFresh),36.0,Fruit,45
+173,Valencia Oranges (Brand: CitrusGold),62.0,Fruit,50
+174,Low-Fat Yogurt (Brand: Amul),75.0,Dairy,35
+175,Whole Wheat Bread (Brand: HealthyBake),50.0,Bakery,50
+176,Parboiled Basmati Rice (Brand: RoyalHarvest),90.0,Staples,70
+177,Assam Tea (Brand: TeaMasters),180.0,Staples,60
+178,Swiss Cheese Slices (Brand: GourmetCheese),95.0,Dairy,35
+179,Red Chili Powder (Brand: SpiceMaster),140.0,Spices,55
+180,Spicy Cheese Puffs (Brand: Lay's),28.0,Snacks,65
+181,Blackberries (Brand: BerryFresh),85.0,Fruit,40
+182,Green Plantains (Brand: FreshHarvest),40.0,Fruit,45
+183,Mandarin Oranges (Brand: CitrusFresh),55.0,Fruit,50
+184,Cheddar Cheese Spread (Brand: Amul),80.0,Dairy,40
+185,Seeded Bread (Brand: GrainMaster),55.0,Bakery,45
+186,Quick-Cook Rice (Brand: PureRice),95.0,Staples,65
+187,Herbal Tea (Brand: TeaMasters),190.0,Staples,55
+188,Edam Cheese (Brand: GourmetCheese),90.0,Dairy,35
+189,Tandoori Masala (Brand: SpiceWorld),150.0,Spices,45
+190,Cheese Balls (Brand: Lay's),26.0,Snacks,70
+191,Fresh Kiwi (Brand: FruitFarm),70.0,Fruit,35
+192,Yellow Plantains (Brand: TropicalDelight),41.0,Fruit,40
+193,Organic Navel Oranges (Brand: CitrusDelight),68.0,Fruit,45
+194,Full Cream Cheese (Brand: Amul),85.0,Dairy,40
+195,Multigrain Loaf (Brand: HealthyGrains),55.0,Bakery,50
+196,Long Grain Rice (Brand: QuickCook),90.0,Staples,60
+197,Green Tea (Brand: GreenLeaf),190.0,Staples,55
+198,Cheddar Cheese (Brand: GourmetCheese),95.0,Dairy,35
+199,Chili Powder (Brand: SpiceMaster),130.0,Spices,50
+200,Potato Chips (Brand: Lay's),27.0,Snacks,70

@@ -10,7 +10,7 @@ def load_products(filename):
                 'name': row['product_name'],
                 'price': float(row['price']),
                 'category': row['category'],
-                'stock': int(row['stock'])  # Load stock from CSV
+                'stock': int(row['stock'])
             }
     return products
 
@@ -24,6 +24,29 @@ def load_discounts(filename):
                 'value': float(row['discount_value'])
             }
     return discounts
+
+def load_users(filename):
+    users = {}
+    try:
+        with open(filename, mode='r') as file:
+            reader = csv.DictReader(file)
+            for row in reader:
+                users[row['phone']] = {
+                    'name': row['name'],
+                    'points': int(row['points'])
+                }
+    except FileNotFoundError:
+        with open(filename, mode='w', newline='') as file:
+            writer = csv.writer(file)
+            writer.writerow(['phone', 'name', 'points'])
+    return users
+
+def save_users(filename, users):
+    with open(filename, mode='w', newline='') as file:
+        writer = csv.writer(file)
+        writer.writerow(['phone', 'name', 'points'])
+        for phone, details in users.items():
+            writer.writerow([phone, details['name'], details['points']])
 
 def apply_discount(price, discount_type, discount_value):
     if discount_type == 'percentage':
@@ -97,20 +120,22 @@ def update_stock_and_warn(items, products):
 def update_stock_file(filename, products):
     with open(filename, mode='w', newline='') as file:
         writer = csv.writer(file)
-        writer.writerow(['id', 'product_name', 'price', 'category', 'origin_price', 'stock'])  # Header
+        writer.writerow(['id', 'product_name', 'price', 'category', 'stock'])
         for item_id, details in products.items():
             writer.writerow([
                 item_id, details['name'], details['price'], details['category'],
-                details['price'], details['stock']
+                details['stock']
             ])
 
 def main():
     products_file = 'products.csv'
     discounts_file = 'categories.csv'
+    users_file = 'users.csv'
 
-    # Load products and discounts
+    # Load products, discounts, and users
     products = load_products(products_file)
     discounts = load_discounts(discounts_file)
+    users = load_users(users_file)
 
     # Determine log filename based on current date
     today_date = datetime.datetime.now().strftime('%Y-%m-%d')
@@ -124,47 +149,78 @@ def main():
         if log_file.tell() == 0:
             file_writer.writerow(['ID', 'Product', 'Category', 'Quantity', 'Price', 'Discount', 'Total'])
 
+        phone_number = input("Enter your phone number (or press Enter to skip points): ").strip()
+        if phone_number and phone_number.isdigit() and len(phone_number) == 10:
+            if phone_number not in users:
+                name = input("Enter your name: ").strip()
+                users[phone_number] = {'name': name, 'points': 0}
+                print("Welcome to our store! Your points journey starts now.")
+            else:
+                print(f"Welcome back, {users[phone_number]['name']}! Your points: {users[phone_number]['points']}")
+        else:
+            print("Skipping points system.")
+
+        items = {}
         while True:
-            items = {}
-            while True:
-                item_id = input("Enter product ID (or press Enter to finish): ").strip()
-                if item_id == "":
-                    break
-                if item_id in products:
-                    max_stock = products[item_id]['stock']
-                    if max_stock <= 0:
-                        print(f"Sorry, {products[item_id]['name']} is out of stock.")
+            item_id = input("Enter product ID (or press Enter to finish): ").strip()
+            if not item_id:
+                break
+            if item_id in products:
+                max_stock = products[item_id]['stock']
+                if max_stock <= 0:
+                    print(f"Sorry, {products[item_id]['name']} is out of stock.")
+                    continue
+
+                quantity_str = input(f"Enter quantity for {products[item_id]['name']} (Available: {max_stock}): ").strip()
+                try:
+                    quantity = int(quantity_str)
+                    if quantity > max_stock:
+                        print(f"Insufficient stock! Only {max_stock} available.")
                         continue
 
-                    quantity_str = input(f"Enter quantity for {products[item_id]['name']} (Available: {max_stock}): ").strip()
-                    try:
-                        quantity = int(quantity_str)
-                        if quantity > max_stock:
-                            print(f"Insufficient stock! Only {max_stock} available.")
-                            continue
-
-                        if item_id in items:
-                            items[item_id] += quantity
-                        else:
-                            items[item_id] = quantity
-                    except ValueError:
-                        print("Invalid quantity. Please enter a valid number.")
-                else:
-                    print("Product ID not found. Please try again.")
-
-            if items:
-                # Print the bill first
-                print_and_log_bill(items, products, discounts, file_writer)
-                # Update stock and show warnings after bill is shown
-                update_stock_and_warn(items, products)
+                    if item_id in items:
+                        items[item_id] += quantity
+                    else:
+                        items[item_id] = quantity
+                except ValueError:
+                    print("Invalid quantity. Please enter a valid number.")
             else:
-                print("No items added. Please enter product IDs and quantities.")
+                print("Product ID not found. Please try again.")
 
-            # End input after processing one bill
-            break
+        if items:
+            print_and_log_bill(items, products, discounts, file_writer)
+            update_stock_and_warn(items, products)
 
-    # Update stock in the products.csv file
+            # Calculate the total amount before points redemption
+            total_amount = sum(
+                apply_discount(products[item_id]['price'], discounts.get(products[item_id]['category'], {}).get('type', 'fixed'), discounts.get(products[item_id]['category'], {}).get('value', 0)) * quantity
+                for item_id, quantity in items.items()
+            )
+
+            # Check if user wants to redeem points
+            if phone_number and phone_number.isdigit() and len(phone_number) == 10 and users[phone_number]['points'] > 0:
+                points_to_redeem = users[phone_number]['points']
+                redeem_value = min(points_to_redeem, total_amount)
+
+                # Ask if the user wants to redeem their points
+                redeem = input(f"Your total is {total_amount:.2f} INR. You have {points_to_redeem} points. Do you want to redeem points? (y/n): ").strip().lower()
+                if redeem == 'y':
+                    # Subtract points from the total amount
+                    total_amount -= redeem_value
+                    users[phone_number]['points'] -= redeem_value
+                    print(f"Points redeemed: {redeem_value} INR. New total: {total_amount:.2f} INR.")
+                else:
+                    print("No points redeemed.")
+
+            # Update points if the user entered a valid phone number
+            if phone_number and phone_number.isdigit() and len(phone_number) == 10:
+                users[phone_number]['points'] += int(total_amount // 100)
+                if users[phone_number]['points'] > 0:
+                    print(f"Congrats! You earned {int(total_amount // 100)} points.")
+                    print(f"Your new points balance: {users[phone_number]['points']}")
+
     update_stock_file(products_file, products)
+    save_users(users_file, users)
 
 if __name__ == "__main__":
     main()
